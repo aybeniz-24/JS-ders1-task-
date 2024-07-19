@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Task1</title>
+</head>
+    <body>
+        <input type="text" id="azer" value="azer" />
+        <button onclick="vur()"> <==> </button>
+        <input type="text" id="rza" value="rza" />
+
+
+        <script>
+            let azer = document.getElementById("azer")
+            let rza = document.getElementById("rza")
+            let c = ""
+
+            function vur(){
+                c = azer.value
+                azer.value = rza.value
+                rza.value = c
+            }
+
+        </script>
+    </body>
+</html>
